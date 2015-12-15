@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css">
+        html {
+            font-family: sans-serif;
+            font-size: 1.2em;
+            background: #4392ad;
+        }
+    </style>
+    <title>Reading from an XML file Javascript</title>
+    <script type="text/javascript" src="../../javascript/Parsing.js"></script>
+    <link rel="stylesheet" href="../../css/gen.css" type='text/css' media="screen" />
+</head>
+<body>
+    <h2>Experimenting with XML parsing </h2>
+    <hr />
+
+    <h3>Experiment </h3>
+    <p>click below on each link , game1 game2 game3 ,to get the information of individual games . The data is fetched from xml file.</p>
+    <hr />
+
+    <h3>Description</h3>
+    <p>Here I have created a javascript file to parse an xml file and display the content as alert. File is parsed and content of each tag 
+        is segregated out .</p><h4>XML DATA:</h4>Following is the XML file that I have created and will be using for my experiment
+    <a href="../../../fileview/Default.aspx?~/Experiments/xml/games.xml" target="_blank">games XML file</a>
+    <hr />
+
+
+    <xml id="gm" style="display: none"> 
+        <games-info>
+  <game>
+    <gname>LeagueOfLegend</gname>
+    <rating>4</rating>
+    <website>leagueoflegend.com</website>
+    <type>RPG</type>
+  </game>
+  <game>
+    <gname>dota</gname>
+    <rating>2</rating>
+    <website>dota.com</website>
+    <type>RPG</type>
+  </game>
+<game>
+    <gname>counterstrike</gname>
+    <rating>3</rating>
+    <website>counterstrike.com</website>
+    <type>FPS</type>
+  </game>
+<game>
+    <gname>jezzball</gname>
+    <rating>1</rating>
+    <website>jezzball.com</website>
+    <type>BG</type>
+  </game>
+</games-info>
+    </xml>
+
+    <a href="javascript:display1()">game1</a><br />
+    <a href="javascript:display2()">game2</a><br />
+    <a href="javascript:display3()">game3</a><br />
+
+    <div>
+        <hr />
+        <br />
+
+        <h3>Source Code</h3>
+        <a href="../../../fileview/Default.aspx?~/Experiments/Week7/storyfiles/ex22.html" target="_blank">HTML Source</a><br />
+        <a href="../../../fileview/Default.aspx?~/Experiments/javascript/Parsing.js" target="_blank">Javascript</a><br />
+        <a href="../../../fileview/Default.aspx?~/Experiments/xml/games.xml" target="_blank">XML file</a>
+        <br />
+        <hr />
+
+        <h3>References</h3>
+        <a href="www.w3schools.org" target="_blank">w3schools</a>
+
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+﻿    .display_pic {
+        height: 30%;
+        width: 20%;
+    }
+
+body {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/background.jpg");
+    background-size: 100%;
+    background-position: 0 0;
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.pad {
+    padding: 10px;
+}
+
+ul.master_navigation {
+    font-size: 100%;
+    font-weight: bold;
+    text-align: center;
+    list-style: none;
+    margin: 0.7em 0;
+    padding: 0;
+    font-family: 'Play', sans-serif;
+}
+
+    ul.master_navigation li {
+        display: inline-block;
+        padding: 0 0.5%;
+    }
+
+a {
+    color: #05f060;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+    a:visited {
+        color: #88f;
+    }
+
+    a:hover {
+        color: #f00;
+    }
+
+p {
+    text-align: justify;
+}
+
+img {
+    float: left;
+    border: 2px solid black;
+    //padding-left: 10px;
+    //padding-top: 10px;
+    margin: 0px 15px 15px 0px;
+    vertical-align: text-bottom;
+}
+
+.icon{
+    height: 100%;
+    width: 100%;
+    border: transparent;
+    float:right;
+}
+
+#footer{
+    position:fixed;
+    bottom:0;
+    width:100%;
+    height:9%;
+}
+#social{
+    float:right;
+}
+.footer_icon{
+    height:5%;
+    width:5%;
+    border: transparent;
+    float:right
+}
+
+#copyright{
+    float:left;
+}
+
+figure {
+    float: right;
+    height: 20%;
+    margin: 0;
+    width: 8%;
+}

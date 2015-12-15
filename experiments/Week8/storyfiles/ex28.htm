@@ -1,0 +1,118 @@
+﻿
+<!DOCTYPE html>
+
+<script runat="server">
+    
+    protected void Fetch_Data(object sender, EventArgs e)
+    {
+        string keywords = userKeywords.Text;
+        string requestUrl = "http://gdata.youtube.com/feeds/api/videos?q=" + keywords + "&start-index=1&category=Music&max-results=1&v=2";
+        try
+        {
+            /* Generate a web request */
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(requestUrl);
+
+            /* Get the web response */
+            HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+
+            /* Read response to the end and parse the XML */
+            StreamReader reader = new StreamReader(response.GetResponseStream());
+
+            string videoResult = reader.ReadToEnd();
+            XmlDocument doc = new XmlDocument();
+            doc.LoadXml(videoResult);
+
+            XmlNodeList videoIds = doc.GetElementsByTagName("yt:videoid");
+            string result = "";
+
+            /* There will be only one result since the max results has been set to 1 */
+            foreach (XmlNode videoId in videoIds)
+            {
+                result += "<iframe width=\"600\" height=\"400\" src=\"http://www.youtube.com/embed/" + videoId.InnerText + "\" frameborder=\"0\" allowfullscreen></iframe>";
+            }
+
+            resultDiv.InnerHtml = result;
+        }
+        catch (Exception ex)
+        {
+            resultDiv.InnerHtml = "<h3>Sorry! An exception occured while fetching data</h3>" + ex;
+        }
+        
+    }
+
+</script>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Retrieve Music Videos from Youtube API</title>
+    <link rel="stylesheet" href="../../css/style.css" type="text/css" />
+    <link rel="stylesheet" href="../style.css" type="text/css" />
+
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <h1>Experiment 13 - Retrieve Music Videos from Youtube API</h1>
+        <section>
+            <p class="title">
+                Purpose
+            </p>
+            <p>
+                To show the most revelant music video for a requested song title
+            </p>
+        </section>
+        <section>
+            <p class="title">
+                Documentation
+            </p>
+            <p>
+                The user has to enter the song title as keywords in the text box to be able to view the
+                most relevant video from Youtube.
+            </p>
+            <p>
+                Using the Song title that the user enters, a WebRequest is sent to the Youtube API.
+                The query parameters that are used for the request are - <br />
+                <b>start-index:</b> To specify starting at which entry, the response is desired (For this experiment it is set to 1) <br />
+                <b>q:</b> To specify the search string (For this experiment it is the keywords entered by the user) <br />
+                <b>category:</b> To specify the domain of the search (For this experiment it is set to Music) <br />
+                <b>max-results:</b> To specify the number of results desired in the response (For this experiment it is set to 1, since
+                only the top most relevant result is desired) <br />
+                <b>v:</b> To specify the version of the API to be used (For this experiment the latest stable version 2 is used)
+            </p>
+            <p>
+                The response is received in the XML format. The response is read to find out the videoid of the video 
+                which is used to embed it on the web page using iFrame.
+            </p>
+        </section>
+        <section>
+            <p class="title">
+                Experiment
+            </p>
+            <p>
+                Please enter the song Title
+            </p>
+            <p>Example Searches: Radioactive, Mirrors, Done. </p>
+            
+            <input type="text" ID="userKeywords"name="fname">
+            <button type="button" ID="Button1" runat="server" OnClick="Fetch_Data" Text="Search">Search</button>
+            <div id="resultDiv" runat="server">
+            </div>
+        </section>
+        <hr />
+        <p>
+            <b>View Source: </b>
+            <a href="../../fileview/default.aspx?~/experiments/api/experiment13.aspx"
+                target="_blank">
+                <code>~/experiments/api/experiment13.aspx</code>
+            </a>
+        </p>
+
+        <p>
+            <b>Reference: </b>
+            <a href="https://developers.google.com/youtube/" target="_blank">Youtube API</a>
+        </p>
+    </form>
+
+
+</body>
+</html>

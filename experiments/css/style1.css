@@ -1,0 +1,37 @@
+
+img{
+    position: relative;
+    height: 350px;
+    width: 240px;
+    
+}
+
+.puz1,.puz2,.puz3{
+    float:left;   
+    height : 10px
+}
+.maindiv{
+    width: 100%;
+     clear:both;
+     position:relative;
+}
+.div-header {
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 3px;
+    margin: 1px;
+    font-size:20px;
+}
+.games{
+    height:400px;
+    width:950px;
+    border-width: 3px;
+    border-style:solid;
+    border-color:pink;
+  
+    padding: 10px;
+    margin: 5px;
+    padding-left:120px;
+}
+

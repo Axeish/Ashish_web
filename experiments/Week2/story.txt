@@ -1,0 +1,6 @@
+﻿../../story/whatisnext.htm?../Experiments/Week2/story.txt                   Week2 :Basic CSS & JQuery
+storyfiles/ex6.htm              Responsive Page
+storyfiles/ex7.htm              JQuery:Hide and Show
+storyfiles/ex8.htm              JQuery:Change Font Color
+storyfiles/ex9.htm              JQuery:Slider
+

@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+
+
+<head>
+    <link rel="stylesheet" href="../../css/gen.css" />
+    <script type="text/javascript">
+
+        var slideimages = new Array() // create new array to preload images
+        slideimages[0] = new Image() // create new instance of image object
+        slideimages[0].src = "../../images/slide-show/1.jpg" // set image src property to image path, preloading image in the process
+        slideimages[1] = new Image()
+        slideimages[1].src = "../../images/slide-show/2.jpg"
+        slideimages[2] = new Image()
+        slideimages[2].src = "../../images/slide-show/3.jpg"
+        slideimages[2] = new Image()
+        slideimages[2].src = "../../images/slide-show/4.jpg"
+        slideimages[2] = new Image()
+        slideimages[2].src = "../../images/slide-show/5.jpg"
+        slideimages[2] = new Image()
+        slideimages[2].src = "../../images/slide-show/6.jpg"
+    </script>
+
+</head>
+
+<body>
+    <h2>Slide Show</h2>
+    <hr />
+    <h3>Experiment</h3>
+    <p>Here I have created a slideshow of 4 images taken from my own camera. All 4 images are copyrigh.</p>
+    <img src="../../images/slide-show/1.jpg" id="slide" width="200" height="300" />
+       <script src="../../javascript/myshow.js"></script>
+    
+    <hr />
+    <h3>Description</h3>
+    <p> I have used Javascript to change the content of Div that is containing an image Initially. The SRC attribute of image will keep on pointing to different url stored in 
+        slideimages array that I have created resulting in cool slideshow.
+    </p>
+    <hr />
+
+    <h4>Source Code</h4>
+    <a href="../../../fileview/Default.aspx?~/Experiments/Week3/storyfiles/ex11.htm" target="_blank">HTML Source</a>
+    <a href="../../../fileview/Default.aspx?~/Experiments/javascript/myshow.js" target="_blank">JS Source</a>
+    <hr />
+    <h4>References</h4>
+    <a href="http://www.w3schools.com/" target="_blank">W3 Schools</a>
+
+    <hr />
+
+
+
+</body>
+</html>

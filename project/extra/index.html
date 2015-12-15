@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spottube</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body class="homepage">
+    <header id="header">
+        <nav class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+                </div>
+
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="music.html">Music</a></li>
+                        <li><a href="videos.html">Videos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <section id="primarysec" class="service-item">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="searchbox searchmusic center">
+                        <h2><br>search music</h2>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <form name="searchmusicartistForm" data-searchtype="music" data-searchpara="artist">
+                                        <input type="text" name="searchmusicartist" class="form-control" required="required" placeholder="search by artist..">
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <form name="searchmusictrackForm" data-searchtype="music" data-searchpara="track">
+                                        <input type="text" name="searchmusictrack" class="form-control" required="required" placeholder="or by track..">
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <form name="searchmusicalbumForm" data-searchtype="music" data-searchpara="album">
+                                        <input type="text" name="searchmusicalbum" class="form-control" required="required" placeholder="or by album..">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div><br><br>
+                </div>
+            </div>
+            <hr class=" center" style=" border-top: 1px solid RGBA(255,255,255,0.4); border-bottom: none; width: 70%; margin: 0px auto;">
+            <div class="row">
+                <div class="col-md-3">
+                </div>
+                <div class="col-md-6">
+                    <div class="searchbox searchvideos center">
+                        <h2><br>search videos</h2>
+                        <div class="form-group">
+                            <input type="text" name="searchtext" class="form-control" required="required" placeholder="search videos..">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                </div>
+            </div>
+            <div class="row" style="display: none;">
+                <div class="col-md-5">
+                    <div class="center">
+                        <h2>Music</h2>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div id="vhrline" class="center"></div>
+                </div>
+                <div class="col-md-5">
+                    <div class="center">
+                        <h2>Videos</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="credits">
+        <div class="container">
+            <div class="center">
+                <h2>proudly made by using these awesome technologies</h2>
+            </div>
+            <div class="credits">
+                <ul>
+                    <li> <a href="#"><img class="img-responsive" src="images/credits/html5.png"></a></li>
+                    <li> <a href="#"><img class="img-responsive" src="images/credits/css3.png"></a></li>
+                    <li> <a href="#"><img class="img-responsive" src="images/credits/js.png"></a></li>
+                    <li> <a href="#"><img class="img-responsive" src="images/credits/bootstrap.png"></a></li>
+                    <li> <a href="#"><img class="img-responsive" src="images/credits/jquery.png"></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer id="footer" class="midnight-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    Copyright &copy; 2015 <a target="_blank" href="index.html">Spottube by Hardik Surana</a>
+                </div>
+                <div class="col-sm-6">
+                    <ul class="pull-right">
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

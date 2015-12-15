@@ -1,0 +1,204 @@
+﻿ .fan {
+        }
+
+        .fan-item {
+            border-radius: 4px;
+            display: block;
+            height: 180px;
+            position: fixed;
+            width: 90px;
+            span;
+
+        {
+            display: block;
+            height: 45px;
+            width: 100%;
+        }
+
+        span:nth-child(1) {
+            border-radius: 4px 4px 0 0;
+        }
+
+        span:nth-child(4) {
+            border-radius: 0 0 4px 4px;
+        }
+
+        }
+
+        .fan-item--blue {
+            background: #389ef2;
+            left: 164px;
+            top: 250px;
+            z-index: 4;
+            span: nth-child(1);
+
+        {
+            background: #389ef2;
+        }
+
+        span:nth-child(2) {
+            background: #5ccbf9;
+        }
+
+        span:nth-child(3) {
+            background: #a2e4fb;
+        }
+
+        span:nth-child(4) {
+            background: #f3faff;
+        }
+
+        }
+
+        @-webkit-keyframes rotatePurple {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(24deg);
+            }
+        }
+
+        .fan-item--purple {
+            -webkit-animation: rotatePurple 800ms ease-out;
+            background: #737ee3;
+            left: 164px;
+            top: 250px;
+            transform: rotate(24deg);
+            -webkit-transform-origin: 0 100%;
+            z-index: 3;
+            span: nth-child(1);
+
+        {
+            background: #737ee3;
+        }
+
+        span:nth-child(2) {
+            background: #abaef7;
+        }
+
+        span:nth-child(3) {
+            background: #d5d6f6;
+        }
+
+        span:nth-child(4) {
+            background: #f0f1fb;
+        }
+
+        }
+
+        @-webkit-keyframes rotateRed {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(48deg);
+            }
+        }
+
+        .fan-item--red {
+            -webkit-animation: rotateRed 800ms ease-out;
+            background: #ee5f5d;
+            left: 164px;
+            top: 250px;
+            transform: rotate(48deg);
+            -webkit-transform-origin: 0 100%;
+            z-index: 2;
+            span: nth-child(1);
+
+        {
+            background: #ee5f5d;
+        }
+
+        span:nth-child(2) {
+            background: #f19092;
+        }
+
+        span:nth-child(3) {
+            background: #f8cbcd;
+        }
+
+        span:nth-child(4) {
+            background: #fcedee;
+        }
+
+        }
+
+        @-webkit-keyframes rotateGreen {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(60deg);
+            }
+        }
+
+        .fan-item--green {
+            -webkit-animation: rotateGreen 800ms ease-out;
+            background: #b32a31;
+            left: 164px;
+            top: 250px;
+            transform: rotate(60deg);
+            -webkit-transform-origin: 0 100%;
+            z-index: 1;
+            span: nth-child(1);
+
+        {
+            background: #b32a31;
+        }
+
+        span:nth-child(2) {
+            background: #c6de6e;
+        }
+
+        span:nth-child(3) {
+            background: #e8f1c4;
+        }
+
+        span:nth-child(4) {
+            background: #f7f9eb;
+        }
+
+        }
+
+
+        @-webkit-keyframes rotateYellow {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(72deg);
+            }
+        }
+
+        .fan-item--yellow {
+            -webkit-animation: rotateYellow 800ms ease-out;
+            background: #b48503;
+            left: 164px;
+            top: 250px;
+            transform: rotate(72deg);
+            -webkit-transform-origin: 0 100%;
+            z-index: 0;
+            span: nth-child(1);
+
+        {
+            background: #737ee3;
+        }
+
+        span:nth-child(2) {
+            background: #abaef7;
+        }
+
+        span:nth-child(3) {
+            background: #d5d6f6;
+        }
+
+        span:nth-child(4) {
+            background: #f0f1fb;
+        }
+
+        }

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<games-info>
+  <game>
+    <gname>LeagueOfLegend</gname>
+    <rating>4</rating>
+    <website>leagueoflegend.com</website>
+    <type>RPG</type>
+  </game>
+  <game>
+    <gname>dota</gname>
+    <rating>2</rating>
+    <website>dota.com</website>
+    <type>RPG</type>
+  </game>
+<game>
+    <gname>counterstrike</gname>
+    <rating>3</rating>
+    <website>counterstrike.com</website>
+    <type>FPS</type>
+  </game>
+<game>
+    <gname>jezzball</gname>
+    <rating>1</rating>
+    <website>jezzball.com</website>
+    <type>BG</type>
+  </game>
+</games-info>

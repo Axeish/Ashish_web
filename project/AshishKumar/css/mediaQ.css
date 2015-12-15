@@ -1,0 +1,97 @@
+﻿/*
+
+Author: Ashish Kumar
+    @copyright 2014
+
+CSS file to define media queries to make my page responsive
+
+
+*/
+
+.rough {
+    width: 50%;
+}
+
+h5 {
+    font-size: 150%;
+}
+
+.about {
+    padding: 20%;
+    color: red;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.text1 {
+}
+
+
+/*for media smaller having minimum width 110 px and max width 850px*/
+@media screen and (max-width: 850px) and (min-width:110px) {
+
+    #gol {
+        margin: 0% 9.8%;
+        width: 25%;
+    }
+
+    .rough {
+        width: 80%;
+    }
+
+    #gol1 {
+        position: relative;
+        left: 35.2%;
+        top: 8.5%;
+        width: 25%;
+    }
+
+    #searchbox {
+        background-color: #eaf8fc;
+        background-image: linear-gradient(#4e1414,#4e0000);
+        border-radius: 10px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #a00;
+        width: 29%;
+        height: 50px;
+        padding: 10px;
+        margin: 1% auto 5%;
+        overflow: hidden;
+        align-content: center;
+        min-width: 300px;
+    }
+}
+/* screenwidth less than 1024px
+--------------------------------------------------------------------- */
+@media only screen and (min-width:850px) {
+    #gol {
+        position: relative;
+        left: 25.5%;
+        top: 9%;
+        width: 15%;
+    }
+
+    #gol1 {
+        position: relative;
+        left: 41%;
+        top: 8.5%;
+        width: 15%;
+    }
+
+    #searchbox {
+        background-color: #eaf8fc;
+        background-image: linear-gradient(#4e1414,#4e0000);
+        border-radius: 10px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #a00;
+        width: 29%;
+        height: 35px;
+        padding: 10px;
+        margin: 1% auto 5%;
+        overflow: hidden;
+        align-content: center;
+    }
+}
+}

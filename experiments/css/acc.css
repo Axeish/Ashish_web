@@ -1,0 +1,74 @@
+
+#container {
+    width: 400px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 2%;
+    border-top: 1px solid #bdbdbd;
+    border-left: 1px solid #bdbdbd;
+    border-right: 1px solid #bdbdbd;
+}
+
+.accordion label {
+    display: block;
+    background-color: #eeeeee;
+    padding: 10px;
+    color: #424242;
+    text-shadow: 0 0 2px rgba(255,255,255,0.6);
+    cursor: pointer;
+    border-bottom: 1px solid #bdbdbd;
+    border-top: 1px solid #ffffff;
+}
+
+.accordion p {
+    color: #424242;
+    padding: 5px;
+    font-size: 0.8em;
+    line-height: 1.7em;
+    border-bottom: 1px solid #bdbdbd;
+    font-family: 'Droid Serif';
+    font-style: italic;
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+    text-align: left;
+    background-color: #fff;
+    margin-top: 0px;
+}
+
+#tm:checked ~ .hiddentext {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
+
+input#tm {
+    display: none;
+    position: relative;
+}
+
+#tn:checked ~ .hiddentext {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
+
+input#tn {
+    display: none;
+    position: relative;
+}
+
+#to:checked ~ .hiddentext {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
+
+input#to {
+    display: none;
+    position: relative;
+}
+
+.arrow {
+    color: #666666;
+}

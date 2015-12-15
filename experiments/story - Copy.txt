@@ -1,0 +1,14 @@
+﻿storyfiles/ex1.htm              Images(css&html)
+storyfiles/ex2.htm              Paragraph and fonts
+storyfiles/ex3.htm              list tables(html)
+storyfiles/ex4.htm              links
+storyfiles/ex5.htm              Forms
+storyfiles/ex6.htm              Responsive Page
+storyfiles/ex7.htm              JQuery:Hide and Show
+storyfiles/ex8.htm              JQuery:Change Font Color
+storyfiles/ex9.htm              JQuery:Slider
+storyfiles/ex10.htm             Javascript :Alert
+storyfiles/ex11.htm             Javascript :Slide show
+storyfiles/ex12.htm             Javascript :Google map 
+storyfiles/ex13.htm             Javascript :more Google map & Geolocation
+

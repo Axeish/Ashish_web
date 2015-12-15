@@ -1,0 +1,6 @@
+﻿../../story/whatisnext.htm?../Experiments/Week3/story.txt                  Week3 : Javascript and GoogleMap
+storyfiles/ex10.htm             Javascript :Alert
+storyfiles/ex11.htm             Javascript :Slide show
+storyfiles/ex12.htm             Javascript :Google map 
+storyfiles/ex13.htm             Javascript :more Google map & Geolocation
+

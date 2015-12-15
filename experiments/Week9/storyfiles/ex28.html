@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, minimum-scale=1">
+    <title>Project Preliminaries - Artsy API</title>
+    <link rel="stylesheet" href="../../css/gen.css" type='text/css' media="screen" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <link rel="icon" href="../../images/paint-icon1.ico" />
+
+    <script type="text/javascript" src="../../javascript/search.js"></script>
+    
+</head>
+
+<body>
+    <h2>Experiment : Artsy fetch data </h2>
+    <hr />
+    <div class="behavior">
+        <h3>Experiment</h3>
+        <p>Type a text related to art /art history and click on search button. </p>
+        <input id="searchString" type="text" />
+        <button id="submitArtist">Search</button>
+    </div>
+    <br />
+    <hr />
+
+
+    <h3>Description</h3>
+    <p>
+        In this experiment I am using artsy API . Here I making a json request to search artist, artwork or gene from Artsy api.<br />
+        Here it search
+     for anything by following the search link from root with a query parameter.<br />
+        <br />
+        <b>curl -v "https://api.artsy.net/api/search?q=Andy+Warhol" 
+     -H "X-XAPP-Token:..."</b><br />
+        <br />
+        The response is a paginated result with embedded search results.
+        <br />
+    </p>
+    <hr />
+
+    <div id="content">
+        <h3>Output Area</h3>
+        <div id="Artistcontents" class="contents"></div>
+        <div id="Artworkcontents" class="contents"></div>
+    </div>
+    <hr />
+
+    <h3>Source Code</h3>
+    <hr />
+    <a href="../../../fileview/Default.aspx?~/Experiments/Week9/storyfiles/ex28.html" target="_blank">HTML Source</a>
+    <a href="../../../fileview/Default.aspx?~/Experiments/javascript/search.js" target="_blank">Javascript Source</a>
+    <br />
+
+    <br />
+
+    <h3>References</h3>
+    <hr />
+    <a href="https://developers.artsy.net/docs" target="_blank">ARTSY Developers</a>
+    <br />
+</body>
+</html>

@@ -1,0 +1,124 @@
+﻿/*
+
+Author: Ashish Kumar
+    @copyright 2014
+
+CSS file for radio
+
+reference : api.artsy
+
+
+*/
+
+
+.radio {
+    -webkit-appearance: none; /* remove default */
+    margin-left:;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    cursor: pointer;
+    vertical-align: middle;
+    box-shadow: hsla(0,0%,100%,.15) 0 1px 1px, inset hsla(0,0%,0%,.5) 0 0 0 1px;
+    background-color: hsla(0,0%,0%,.2);
+    background-image: -webkit-radial-gradient( hsla(200,100%,90%,1) 0%, hsla(200,100%,70%,1) 15%, hsla(200,100%,60%,.3) 28%, hsla(200,100%,30%,0) 70% );
+    background-repeat: no-repeat;
+    -webkit-transition: background-position .15s cubic-bezier(.8, 0, 1, 1), -webkit-transform .25s cubic-bezier(.8, 0, 1, 1);
+    outline: none;
+}
+
+    .radio:checked {
+        -webkit-transition: background-position .2s .15s cubic-bezier(0, 0, .2, 1), -webkit-transform .25s cubic-bezier(0, 0, .2, 1);
+    }
+
+    .radio:active {
+        -webkit-transform: scale(1.5);
+        -webkit-transition: -webkit-transform .1s cubic-bezier(0, 0, .2, 1);
+    }
+
+
+
+    /* The up/down direction logic */
+
+    .radio,
+    .radio:active {
+        background-position: 0 24px;
+    }
+
+        .radio:checked {
+            background-position: 0 0;
+        }
+
+            .radio:checked ~ input,
+            .radio:checked ~ input:active {
+                background-position: 0 -24px;
+            }
+
+/*Search box */
+
+
+.search {
+    width: 100%;
+    position: relative;
+}
+
+.searchTerm {
+    float: left;
+    width: 100%;
+    border: 3px solid #00B4CC;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px;
+    outline: none;
+    color: #9DBFAF;
+}
+
+    .searchTerm:focus {
+        color: #00B4CC;
+    }
+
+.searchButton {
+    position: absolute;
+    right: -50px;
+    width: 40px;
+    height: 36px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.search:before {
+    position: absolute;
+    right: -50px;
+    width: 40px;
+    height: 36px;
+    line-height: 36px;
+    background: #00B4CC;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    font-family: 'FontAwesome';
+    content: "Go";
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap {
+    width: 45%;
+    margin-left: 25%;
+    margin-bottom: 10px;
+}
+
+
+img {
+    width: 30%;
+
+}
+
+p {
+    font-size: 150%;
+}
+
+@media screen and (max-width: 850px) {
+    img {
+    width: 70%;
+}
+}

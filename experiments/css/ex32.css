@@ -1,0 +1,87 @@
+﻿.rotate {
+    position: absolute;
+    animation-name: myfirst;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    /* Firefox: */
+    -moz-animation-name: myfirst;
+    /-moz-animation-duration: 5s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-play-state: running;
+    /* Safari and Chrome: */
+    -webkit-animation-name: myfirst;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-play-state: running;
+}
+
+@keyframes myfirst {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+    from {
+        -moz-transform: rotate(0deg);
+    }
+
+    to {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+ #gol {
+        margin: 0% 12.8%;
+        width: 15%;
+    }
+
+    .rough {
+        width: 80%;
+    }
+
+    #gol1 {
+        position: relative;
+        left: 35.2%;
+        top: 8.5%;
+        width: 25%;
+    }
+
+#circle {
+    width: 20px;
+    height: 20px;
+    background: red;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 5s;
+}
+
+#view {
+  
+    left: 145px;
+    top: 55px;
+    width: 200px;
+    height: 200px;
+}

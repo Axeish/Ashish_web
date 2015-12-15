@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css">
+      html, body, #map-api, #map-api2, #map-api3{width: 500px;
+            height: 500px;
+            left: 250px;}
+
+    </style>
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js">
+    </script>
+    <script type="text/javascript">
+        var myCenter = new google.maps.LatLng(42.342, -71.12085);
+        function initialize() {
+            var mapOptions = {
+                center: { lat: 42.347, lng: -71.124 },
+                zoom: 10
+            };
+            var mapOptions2 = {
+                center: { lat: 42.347, lng: -71.124 },
+                zoom: 10
+            };
+            var map = new google.maps.Map(document.getElementById('map-api'),
+                mapOptions);
+
+            var marker = new google.maps.Marker({
+                position: myCenter,
+                
+            });
+
+            marker.setMap(map);
+
+            var map = new google.maps.Map(document.getElementById('map-api2'),
+                mapOptions2);
+
+
+            var marker = new google.maps.Marker({
+                position: myCenter,
+                animation: google.maps.Animation.BOUNCE
+            });
+            var infowindow = new google.maps.InfoWindow({
+                content: "My Home Address"
+            });
+
+            infowindow.open(map, marker);
+
+            marker.setMap(map);
+
+            var map = new google.maps.Map(document.getElementById('map-api3'),
+                  mapOptions2);
+            var marker = new google.maps.Marker({
+                position: myCenter,
+                title: 'Click to zoom'
+            });
+            google.maps.event.addListener(marker, 'click', function () {
+                map.setZoom(9);
+                map.setCenter(marker.getPosition());
+            });
+            marker.setMap(map);
+
+
+            google.maps.event.addListener(map, 'center_changed', function () {
+                // 3 seconds after the center of the map has changed, pan back to the marker
+                window.setTimeout(function () {
+                    map.panTo(marker.getPosition());
+                }, 2000);
+            });
+
+
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+  </head>
+  <body>
+<h3>Google Map and operations</h3>
+      Following map shows the google map of boston and displays a marker at a geolocation
+
+<div id="map-api"  ></div>
+<br />
+      <hr />
+      <p> Marker with animation and text box </p>
+<div id="map-api2"  ></div><br/>
+<br /> <hr />
+<p> Click on marker to Zoom to 9. <br/>Drag map and it will move back to original after 2 seconds</p>
+<div id="map-api3"  ></div><br/>
+
+</script>  
+
+
+<hr />
+
+            <h4>Source Code</h4>
+            <a href="../../fileview/Default.aspx?~/experiments/storyfiles/ex12.htm" target="_blank">View Source</a>
+            <hr />
+               <h4>References</h4>
+            <a href="https://developers.google.com/maps/tutorials" target="_blank">Google developer</a>
+
+            <hr />
+
+       
+</body>
+</html>

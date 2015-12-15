@@ -1,0 +1,270 @@
+﻿
+html {
+    font-family: 'Poiret One', cursive;
+    font-size: 1.2em;
+    background: #808080;
+}
+
+body {
+    min-height: 100px;
+    width: auto;
+    max-width: 99.90%;
+    margin: 0;
+    padding: 0;
+    background: #808080;
+    <!-- background-image: url(../images/back.jpg); -->
+}
+
+p {
+    text-decoration: double;
+    font-family: 'PT Sans', Arial, sans-serif;
+    text-align: justify;
+    font-size: 125%;
+    color: white;
+}
+
+
+
+.footer {
+    display: block;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    color: rgb(255,255,255);
+    left:0px;
+}
+
+    .footer h4 {
+        width: 100%;
+        margin: auto;
+        border-top: 1px solid #2769AC;
+        border-left: 1px solid #2769AC;
+        border-right: 1px solid #2769AC;
+        background-color: #244651;
+    }
+
+#profile {
+    position: absolute;
+    width: 99%;
+    border-radius: 80px;
+    margin-top: 10px;
+}
+
+#show {
+    margin-left: -18%;
+}
+
+#pr {
+    position: absolute;
+    border-radius: 100px;
+    width: 20%;
+    box-shadow: 0px 0px 4px 20px #ffffff;
+}
+
+#myself {
+    position: relative;
+    min-height: 200px;
+    color: white;
+    font-family: 'Poiret One', cursive;
+    font-size: 90%;
+    text-align: center;
+    margin: 10%;
+    width: 78%;
+    height: 20%;
+    background: rgba(13, 36,43,0.6);
+    border-radius: 10px;
+    padding: 3%;
+    margin-top: 25%;
+    margin-bottom: 1%;
+}
+
+#reference {
+    position: relative;
+    width: 10%;
+    max-width: 100px;
+}
+
+    #reference a img {
+        width: 80%;
+    }
+
+@media only screen and (max-width : 480px) {
+    .pad {
+        padding: 20px;
+    }
+
+    #pr {
+        display: none;
+    }
+
+    #profile {
+        position: relative;
+        width: 100%;
+        border-radius: 80px;
+        opacity: 0.8;
+        margin-top: 10px;
+    }
+
+    #myself {
+        height: auto;
+        position: relative;
+        text-align: center;
+        color: white;
+        font-family: 'Poiret One', cursive;
+        font-size: 56%;
+        text-align: center;
+        top: 10%;
+        left: 1%;
+        width: 78%;
+        margin: 0 0;
+        background: rgba(13, 36,43,0.6);
+        border-radius: 10px;
+        padding: 10%;
+    }
+
+    #reference {
+        position: relative;
+        top: 30%;
+        width: 50%;
+    }
+
+        #reference a img {
+            width: 20%;
+        }
+
+    .rotate {
+        -webkit-transition-duration: 0.8s;
+        -moz-transition-duration: 0.8s;
+        -o-transition-duration: 0.8s;
+        transition-duration: 0.8s;
+        -webkit-transition-property: -webkit-transform;
+        -moz-transition-property: -moz-transform;
+        -o-transition-property: -o-transform;
+        transition-property: transform;
+        overflow: hidden;
+    }
+
+        .rotate:hover {
+            -webkit-transform: rotate(360deg);
+            -moz-transform: rotate(360deg);
+            -o-transform: rotate(360deg);
+        }
+
+    #link1 {
+        position: absolute;
+        bottom: 10px;
+    }
+
+    #link2 {
+        position: absolute;
+        left: 120px;
+        bottom: 10px;
+    }
+
+    #link3 {
+        position: absolute;
+        bottom: 10px;
+        left: 240px;
+    }
+
+    #link4 {
+        position: absolute;
+        bottom: 10px;
+        left: 365px;
+        border-radius: 100px;
+        -moz-border-radius: 2em;
+        box-shadow: 0px 0px 0 5px #ffffff;
+    }
+
+    .photos1 {
+        display: block;
+        float: none;
+        margin: 0.5em;
+    }
+
+        .photos1:hover {
+            text-decoration: none;
+        }
+
+    .photos2 {
+        display: block;
+        float: none;
+        margin: 0.8em;
+    }
+
+        .photos2:hover {
+            text-decoration: none;
+        }
+
+    .photos3 {
+        display: block;
+        float: none;
+        margin: 0.5em;
+    }
+
+        .photos3:hover {
+            text-decoration: none;
+        }
+
+    .photos4 {
+        display: block;
+        float: none;
+        margin: 0.5em;
+    }
+
+        .photos4 span {
+            display: block;
+            color: white;
+            float: none;
+        }
+
+        .photos4:hover {
+            background:;
+            text-decoration: none;
+        }
+
+    .photos1 span {
+        text-align: center;
+        display: block;
+        position: absolute;
+        bottom: 130px;
+        left: 0px;
+        color: white;
+        width: 150px;
+        font-size: 1em;
+    }
+
+    .photos2 span {
+        text-align: center;
+        display: block;
+        position: absolute;
+        bottom: 130px;
+        left: 97px;
+        color: white;
+        width: 150px;
+        font-size: 1em;
+    }
+
+    .photos3 span {
+        text-align: center;
+        display: block;
+        position: absolute;
+        bottom: 130px;
+        left: 250px;
+        color: white;
+        width: 40px;
+        font-size: 1em;
+    }
+
+    .photos4 span {
+        text-align: center;
+        display: block;
+        position: absolute;
+        bottom: 130px;
+        left: 350px;
+        color: white;
+        width: 150px;
+        font-size: 1em;
+    }
+}

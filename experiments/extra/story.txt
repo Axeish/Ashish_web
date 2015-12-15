@@ -1,0 +1,10 @@
+﻿storyfiles/ex1.htm              Images(css&html)
+storyfiles/ex2.htm              Paragraph and fonts
+storyfiles/ex3.htm              list tables(html)
+storyfiles/ex4.htm              links
+storyfiles/ex5.htm              Forms
+storyfiles/ex6.htm              Responsive Page
+storyfiles/ex7.htm              Hide and Show
+storyfiles/ex8.htm              Change Font Color
+storyfiles/ex9.htm              slider
+

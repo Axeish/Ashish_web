@@ -1,0 +1,286 @@
+﻿html{
+    font-family:sans-serif;
+    font-size:1.2em;
+    background:#4392ad;
+}
+ul.master_navigation{  
+    position:relative;
+    text-align: center;
+    min-width: 80em;
+    list-style: none;
+    margin-top:0px;
+    marginS: 10px 20em 30px 20em ;
+    padding: 80px;
+    text-shadow:0 0px 10px white;
+    text-decoration:dotted;
+    background-color: #4392ad;
+    white-space:nowrap;
+}
+
+ul.master_navigation li{
+    display: inline-block;
+   
+    text-align: center;
+}
+   
+a{
+    color: #ffd800;
+    text-decoration: dotted;
+}
+    
+a:visited{
+    color: #800;
+}
+
+a:hover{
+    color: #f04;
+    
+}
+
+ul li a{
+
+   position:relative;
+    top:0;left:0;right:25em;bottom:0;
+    display:inline;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    padding:.4em .2em;
+    padding: 8px;
+    padding-bottom:15px;
+    padding-top:15px;
+    color:#ffd800;
+    text-decoration:none;
+    text-shadow:0 1px 0 black;
+    /*transition*/
+    -webkit-transition:width .3s,right .3s;
+     -moz-transition:width .3s,right .3s;
+      -o-transition:width .3s,right .3s;
+        transition:width .3s,right .3s;
+}
+    
+ul li:nth-child(1) a{
+    width:7em;
+}
+ul li:nth-child(2) a{
+    width:5em;
+}
+ul li:nth-child(3) a{
+    width:4.3em;
+}
+ul li:nth-child(4) a{
+    width:4.3em;
+}
+ul li:nth-child(5) a{
+    width:6.4em;
+}
+ul li:nth-child(6) a{   
+    width:5.2em;
+}
+ul li:nth-child(7) a{
+    width:4.3em;
+}
+ul li:nth-child(8) a{
+    width:4.7em;
+}
+ul li:nth-child(9) a{
+    width:4.4em;
+}
+ul li:nth-child(10) a{
+    width:3.1em;
+}
+ul li:nth-child(11) a{
+    width:6.5 em;
+}
+
+ul li:last-child a::after{
+    content:"";
+    position:absolute;
+    right:inherit;
+    bottom:-3px;
+    width:inherit;
+    height:5px;
+    background:#672506;
+    pointer-events:none;
+    /*transition*/
+    -webkit-transition:all .5s ease;
+       -moz-transition:all .5s ease;
+         -o-transition:all .5s ease;
+            transition:all .5s ease;
+}
+
+ul li:nth-child(1) ~ li:last-child a{
+    right:48.2em;
+    width:7em;
+}
+ul li:nth-child(2):hover ~ li:last-child a{
+    right:43.2em;
+    width:5em;
+}
+ul li:nth-child(3):hover ~ li:last-child a{
+    right:38.9em;
+    width:4.3em;
+}
+ul li:nth-child(4):hover ~ li:last-child a{
+    right:34.6em;
+    width:4.3em;
+}
+ul li:nth-child(5):hover ~ li:last-child a{
+    right:28.2em;
+    width:6.4em;
+}
+ul li:nth-child(6):hover ~ li:last-child a{
+    right:23em;
+    width:5.2em;
+}
+ul li:nth-child(7):hover ~ li:last-child a{
+    right:18.7em;
+    width:4.3em;
+}
+ul li:nth-child(8):hover ~ li:last-child a{
+    right:14em;
+    width:4.7em;
+}ul li:nth-child(9):hover ~ li:last-child a{
+    right:9.6em;
+    width:4.4em;
+}
+ul li:nth-child(10):hover ~ li:last-child a{
+    right:6.5em;
+    width:3.1em;
+}
+ul li:nth-child(11):last-child:hover a{
+    right:0em;
+    width:6.5em;
+}
+ul li:hover ~ li:last-child a::after,
+ul li:last-child:hover a::after{
+    background:#ffd800;
+}
+ul li:last-child a{
+    min-width:5em;max-width:5em;
+}
+ul li a:hover,ul li a:focus{
+    color:#ffd800;
+    background-color:#f04;
+   
+    /*transition*/
+    -webkit-transition:width .3s,right .3s,background-color .3s;
+       -moz-transition:width .3s,right .3s,background-color .3s;
+         -o-transition:width .3s,right .3s,background-color .3s;
+            transition:width .3s,right .3s,background-color .3s;
+    }
+ul li a:focus{
+    border-bottom:3px solid #c351fa;
+    }    
+
+
+    p
+    {   position:absolute;
+        width:300px;
+        text-align: justify;
+        font-size: 125%;
+    }
+
+    body {
+        width:auto;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        height:100%;
+        background-image: url(../images/back.jpg);
+    }
+
+    .pad {
+        padding: 20px
+        ;
+       
+    }
+    #pr {
+        position: relative;
+        border-radius: 100px;
+        left : 130px;
+        top: 80px;
+        height: 200px;
+        -moz-border-radius: 1em;
+        width: 200px;
+        box-shadow: 0px 0px 4px 20px #ffffff ;
+    	
+   }
+    #myself {
+        height: auto;
+        position: absolute;
+        text-align: center;
+        font-family: 'Comic Sans MS';
+        font-size: .9em;
+        color: orangered;
+        font-weight:600;
+        text-align: center;
+        top: 250px;
+        left: 350px;
+        max-height: 75%;
+        min-width: 300px;
+}
+.rotate{
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+     
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+     
+    overflow:hidden;
+ 
+    }  
+ 
+.rotate:hover  
+{
+    -webkit-transform:rotate(360deg);
+    -moz-transform:rotate(360deg);
+    -o-transform:rotate(360deg);
+}
+#link1 {
+    position: absolute;
+    bottom: 10px;
+    
+}
+#link2 {
+    position: absolute;
+    left: 120px;
+     bottom: 10px;
+}
+#link3 {
+    position: absolute;
+    bottom: 10px;
+    left: 240px;
+    
+}#link4 {
+    position: absolute;
+    bottom: 10px;
+    left: 365px;
+   
+        border-radius: 100px;
+   
+      
+        -moz-border-radius: 2em;
+       
+        box-shadow: 0px 0px 0 5px #ffffff ;
+    
+}
+.photos1  { display: block;; float: none; margin:0.5em; } 
+.photos1  span { display: none; color: white; float:none} 
+.photos1:hover { background: ; text-decoration: none; } 
+.photos2  { display: block;; float: none; margin:0.5em; } 
+.photos2  span { display: none; color: white; float:none} 
+.photos2:hover { background: ; text-decoration: none; }
+.photos3  { display: block;; float: none; margin:0.5em; } 
+.photos3  span { display: none; color: white; float:none} 
+.photos3:hover { background: ; text-decoration: none; }
+.photos4  { display: block;; float: none; margin:0.5em; } 
+.photos4  span { display: none; color: white; float:none} 
+.photos4:hover { background: ; text-decoration: none; }
+.photos1:hover span {  text-align:center;display: block; position: absolute; bottom: 130px;left:0px; ; width: 150px; font-size: 1em; } 
+.photos2:hover span {  text-align:center;display: block; position: absolute; bottom: 130px;left:90px; ; width: 150px; font-size: 1em} 
+.photos3:hover span {  text-align:center;display: block; position: absolute; bottom: 130px;left:250px; ; width: 40px; font-size: 1em} 
+.photos4:hover span {  text-align:center;display: block; position: absolute; bottom: 130px;left:350px; ; width: 150px; font-size: 1em} 

@@ -1,0 +1,11 @@
+﻿../story/whatisnext.htm?../project/project-story.txt              INDEX
+documentation/project-idea.html           Project Idea
+documentation/overview.html              Project Overview
+documentation/Acknowledgement.html        Acknowledgement
+documentation/homepage.html                Project Homepage
+documentation/Artists.html               Artist 
+documentation/about.html                  About 
+documentation/mywork.html                  Mywork
+documentation/Knownissue.html             Known Issue
+documentation/References.html                Reference
+

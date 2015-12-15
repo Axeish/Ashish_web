@@ -1,0 +1,5 @@
+﻿../../story/whatisnext.htm?../Experiments/Week5/story.txt                   Week5 : Jquerry and CSS
+storyfiles/ex16.htm              Dragging images
+storyfiles/ex17.htm              Making Menu and drop down- CSS
+storyfiles/ex18.html              Menu with gooey effect -CSS
+storyfiles/ex19.html              Accordian -CSS

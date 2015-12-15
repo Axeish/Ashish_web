@@ -1,0 +1,105 @@
+﻿html {
+       font-family: 'Poiret One', cursive;
+      bottom: 0px;
+   top: 1px;
+}
+
+
+body {
+    background-image:url("http://localhost:52571/Ashish_web/images/black.jpg");
+    margin:0; 
+}
+container, header, footer {
+    
+    margin: 0;
+}
+
+container {
+  width:100%;
+}
+
+p {
+}
+a {
+}
+
+
+
+
+#left {
+  
+    padding:50px;
+   float: left;
+    display: block;
+    height:100%;
+     width: 230px;
+      margin-bottom: 50px;
+      
+      background-color:  rgba(0,0,0,0.5);
+
+}
+first,last {
+    color: white;
+    font-size: 58px;
+}
+
+last {
+    margin-top: 10px;
+    position: relative;
+    top:-25px;
+    left: 38px;
+}
+profile {
+}
+    profile img {
+          
+  height: 250px;
+
+  margin: 5px 0;
+  border: 5px solid rgba(255,255,255,1);
+  border-radius: 10px;
+    }
+myself {
+   color: white ;
+}
+footer {
+    display: block;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 40px;
+    left:0px;
+    font-size: 12px;
+    text-align: center;
+    color: rgb(255,255,255);
+    
+}
+
+
+mid{
+  position:absolute;
+  left:340px;
+}
+
+#social img {
+    height: 28px;
+    width: auto;
+}
+#doodle {
+   
+    background:red;
+    height:250px;
+    width: 600px;
+    
+
+}
+
+#projects {
+ 
+    background:red;
+    width : 600px;
+    height : 200px;
+
+    
+}
+

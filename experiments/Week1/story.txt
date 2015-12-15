@@ -1,0 +1,8 @@
+﻿../../story/whatisnext.htm?../Experiments/Week1/story.txt                   Week1 : Basic HTML Experiments
+storyfiles/ex1.htm              Images(css&html)
+storyfiles/ex2.htm              Paragraph and fonts
+storyfiles/ex3.htm              list tables(html)
+storyfiles/ex4.htm              links
+storyfiles/ex5.htm              Forms
+
+

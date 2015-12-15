@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<person-catalog>
+  <person>
+    <pname>ABC</pname>
+    <age>25</age>
+    <email>abc@xyc.com</email>
+  </person>
+  <person>
+    <pname>BCD</pname>
+    <age>30</age>
+    <email>bcd@xyc.com</email>
+  </person>
+  <person>
+    <pname>CDE</pname>
+    <age>35</age>
+    <email>cde@xyc.com</email>
+  </person>
+  <person>
+    <pname>DEF</pname>
+    <age>35</age>
+    <email>def@xyc.com</email>
+  </person>
+</person-catalog>

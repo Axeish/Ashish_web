@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html>
+
+
+<head>
+<script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
+
+
+</head>
+
+<body>
+
+    <h3>Events on google Maps</h3>
+    <hr />
+    Click anywhere on the map to get the latitude and longitude of a map<br /><br />
+ <div id="myMap" style="width:500px;height:380px;"></div>  
+<hr/>    
+<h3>GeoLocation </H3>
+
+<hr />
+<p>Click the button to get your coordinates.</p>
+<button onclick="getLocation()">Try It</button>
+<p id="demo"></p>
+
+<script>
+    var x = document.getElementById("demo");
+    var lat = 70
+    var lng = 40
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+            x.innerHTML = "Geolocation is not supported by this browser.";
+        }
+    }
+
+    function showPosition(position) {
+
+        latlon = position.coords.latitude + "," + position.coords.longitude;
+
+        x.innerHTML = "Latitude: " + position.coords.latitude +
+        "<br>Longitude: " + position.coords.longitude;
+
+
+    }
+
+    var map;
+    var myCenter = new google.maps.LatLng(41.3, -71);
+
+    function initialize() {
+        var mProp = {
+            center: myCenter,
+            zoom: 11,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+
+        map = new google.maps.Map(document.getElementById("myMap"), mProp);
+
+        google.maps.event.addListener(map, 'click', function (event) {
+            placeMarker(event.latLng);
+        });
+    }
+
+    function placeMarker(location) {
+        var marker = new google.maps.Marker({
+            position: location,
+            map: map,
+        });
+        var infowindow = new google.maps.InfoWindow({
+            content: 'Latitude: ' + location.lat() + '<br>Longitude: ' + location.lng()
+        });
+        infowindow.open(map, marker);
+    }
+
+    function initialize1() {
+        var mapProp = {
+            center: latlon,
+            zoom: 5,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+
+        var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+
+        var marker = new google.maps.Marker({
+            position: myCenter,
+            animation: google.maps.Animation.BOUNCE
+        });
+
+        marker.setMap(map);
+        var infowindow = new google.maps.InfoWindow({
+            content: "You are here"
+        });
+
+        infowindow.open(map, marker);
+    }
+
+    google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+<hr/>
+            <h4>Source Code</h4>
+            <a href="../../fileview/Default.aspx?~/experiments/storyfiles/ex13.htm" target="_blank">View Source</a>
+            <hr />
+               <h4>References</h4>
+            <a href="http://www.w3schools.com/" target="_blank">W3 Schools</a>
+
+            <hr />
+
+        
+
+
+</body>
+</html>

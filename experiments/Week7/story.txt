@@ -1,0 +1,4 @@
+﻿../../story/whatisnext.htm?../Experiments/Week7/story.txt                   Week7 : XML
+storyfiles/ex22.html              Parsing XML
+storyfiles/ex24.html              CSS text over image
+storyfiles/ex25.html              Google API

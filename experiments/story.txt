@@ -1,0 +1,10 @@
+﻿../story/whatisnext.htm?../Experiments/story.txt                     What is Next?
+../story/index.htm?../Experiments/Week1/story.txt                 Week1 - Basic HTML Experiments
+../story/index.htm?../Experiments/Week2/story.txt                 Week2 - Basic CSS and JQuery
+../story/index.htm?../Experiments/Week3/story.txt                 Week3 - Javascript and Google Map
+../story/index.htm?../Experiments/Week4/story.txt                 Week4 - Css and animation
+../story/index.htm?../Experiments/Week5/story.txt                 Week5 - JQuery and CSS 
+../story/index.htm?../Experiments/Week6/story.txt                 Week6 - Data Scrapping
+../story/index.htm?../Experiments/Week7/story.txt                 Week7 - XML Parsing, CSS , GoogleAPI
+../story/index.htm?../Experiments/Week8/story.txt                 Week8 - Database
+../story/index.htm?../Experiments/Week9/story.txt                 Week9 - Artsy API(project)

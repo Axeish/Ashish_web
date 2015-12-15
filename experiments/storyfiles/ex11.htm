@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+
+
+<head>
+<script type="text/javascript">
+
+    var slideimages = new Array() // create new array to preload images
+    slideimages[0] = new Image() // create new instance of image object
+    slideimages[0].src = "../../images/slide-show/1.jpg" // set image src property to image path, preloading image in the process
+    slideimages[1] = new Image()
+    slideimages[1].src = "../../images/slide-show/2.jpg"
+    slideimages[2] = new Image()
+    slideimages[2].src = "../../images/slide-show/3.jpg"
+    slideimages[2] = new Image()
+    slideimages[2].src = "../../images/slide-show/4.jpg"
+    slideimages[2] = new Image()
+    slideimages[2].src = "../../images/slide-show/5.jpg"
+    slideimages[2] = new Image()
+    slideimages[2].src = "../../images/slide-show/6.jpg"
+</script>
+
+</head>
+
+<body>
+    <h3>Slide Show</h3>
+    <img src ="../../images/slide-show/1.jpg" id="slide" width="200" height="300" />
+<script type="text/javascript">
+
+    //variable that will increment through the images
+    var step = 0
+
+    function slideit() {
+        //if browser does not support the image object, exit.
+        if (!document.images)
+            return
+        document.getElementById('slide').src = slideimages[step].src
+        if (step < 2)
+            step++
+        else
+            step = 0
+        //call function "slideit()" every 2.5 seconds
+        setTimeout("slideit()", 1500)
+    }
+
+    slideit()
+
+</script> 
+
+
+<hr />
+
+            <h4>Source Code</h4>
+            <a href="../../fileview/Default.aspx?~/experiments/storyfiles/ex11.htm" target="_blank">View Source</a>
+            <hr />
+               <h4>References</h4>
+            <a href="http://www.w3schools.com/" target="_blank">W3 Schools</a>
+
+            <hr />
+
+        
+
+</body>
+</html>

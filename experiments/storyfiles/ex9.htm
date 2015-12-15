@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+
+
+<head>
+   
+    <title>change color</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+   
+    $(document).ready(function () {
+        $("#clk").click(function () {
+            $("#down").slideToggle("slow");
+         
+        });
+    });
+  </script> 
+
+<style>
+    #clk, #down {
+        text-align : left;
+       border:solid 1px #c3c3c3;
+       background-color :floralwhite;
+       width : 200px;
+
+    }
+    #down
+{
+padding:50px;
+display:none;
+width : 300px;
+background-color :dimgrey;
+}
+</style>
+</head>
+
+<body>
+    <h3>Sliders</h3>
+ <h4 >Click "Experiment slider" to see description</h4>   
+<div id="clk">Experiment slider</div>
+<div id="down"><i>Once you click on the slider the description of the slider will slide down on click. This is very good experimentof Jquery.</i>.</div>
+
+
+<hr />
+
+            <h4>Source Code</h4>
+            <a href="../../fileview/Default.aspx?~/experiments/storyfiles/ex9.htm" target="_blank">View Source</a>
+            <hr />
+               <h4>References</h4>
+            <a href="http://www.w3schools.com/" target="_blank">W3 Schools</a>
+
+            <hr />
+
+        
+
+</body>
+</html>
